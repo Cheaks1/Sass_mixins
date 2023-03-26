@@ -3,6 +3,7 @@ this repository will contain all my sass mixins
 
 ### Content of Mixins :
 - [**Abselute**](#abselute-mixin)
+- [**Centering**](#centering-mixin)
 
 
 ## Abselute Mixin:
@@ -38,3 +39,23 @@ If any of the four parameters are provided with a **non-null value**, their corr
 ```
 
 **Note:** that the **"bottom"** and **"right"** properties are not set in this example, because they were not provided as arguments to the mixin.
+
+
+
+
+## Centering Mixin:
+
+This code is an example of a **CSS mixin** that can be used to center an element **horizontally and vertically** within its parent container.
+
+```
+@mixin centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+```
+
+- ``position: absolute``: This positions the element relative to its nearest positioned ancestor, which is typically the parent container.
+- ``top: 50% and left: 50%``: These set the element's position to be in the center of its parent container, but only horizontally and vertically aligned by 50%.
+- ``transform: translate(-50%, -50%)``: This adjusts the position of the element by moving it 50% of its width to the left and 50% of its height up, effectively centering it completely.
